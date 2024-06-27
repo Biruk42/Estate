@@ -81,6 +81,64 @@ body {
   background-color: #ffffff;
   color: #141414;
 }
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #f8f7f7;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 0;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 5px 20px;
+}
+
+.dropdown-menu .link,
+.dropdown-menu .btn {
+  width: 100%;
+  text-align: left;
+}
+.dropdown-item .link {
+  color: #0e0d0d;
+}
+.dropdown-item .link:hover {
+  color: #e7d31a;
+}
+.dropdown-item .btn {
+  box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.5);
+  font-weight: bold;
+}
+.__btn-l {
+  background-color: #e6e1e1;
+  color: black;
+  font-weight: bold;
+  box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.5);
+}
+@media (max-width: 768px) {
+  .nav-first,
+  .nav-third {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+}
+.dropdown-menu.active {
+  display: flex;
+}
+
 /* Header */
 .header {
   padding: 20px 40px;
@@ -235,4 +293,6 @@ body {
 .__contain:hover {
   cursor: pointer;
   background-color: black;
+}
+@media (max-width: 768px) {
 }
