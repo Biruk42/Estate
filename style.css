@@ -327,3 +327,134 @@ body {
     text-align: center;
   }
 }
+/* Middle Section */
+.container-2 {
+  margin-top: 50px;
+  text-align: center;
+  color: #141414;
+}
+.middle-header-contain {
+  width: 550px;
+  margin: 0 auto;
+}
+.middle-header {
+  font-size: clamp(1rem, 3rem, 9rem);
+}
+.choose-contain {
+  text-align: center;
+  gap: 40px;
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+}
+.choose-contain-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  background-color: #f5f0f0;
+  border-radius: 20px;
+}
+.choose-item {
+  padding: 7px 25px;
+  border-radius: 20px;
+  transition: all 0.15s ease;
+}
+.choose-item:hover {
+  cursor: pointer;
+  background-color: rgba(86, 165, 255, 0.856);
+  color: white;
+}
+.choose-active {
+  background-color: rgba(86, 165, 255, 0.856);
+  border-radius: 20px;
+  color: #ffffff;
+  padding: 7px 25px;
+  cursor: pointer;
+}
+.search-contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.search-input {
+  padding: 14px 14px;
+  border-radius: 30px;
+  width: 300px;
+  border: 1px solid #141414;
+  outline: none;
+}
+.search-btn {
+  padding: 7px 12px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  gap: 4px;
+  border: none;
+  background-color: #202020;
+  color: white;
+  margin-left: -93px;
+  transition: all 0.15s ease;
+}
+.search-btn:hover {
+  cursor: pointer;
+  background-color: #141414;
+}
+.search-icon {
+  width: 20px;
+}
+.pic-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.pic-item {
+  width: 280px;
+  object-fit: cover;
+  height: 330px;
+  border-radius: 20px;
+  transition: all 0.15s ease;
+}
+.pic-item:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.pic-sub {
+  margin-top: 7px;
+  width: 280px;
+}
+.sub-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #0f0f0f;
+}
+.sub-name {
+  font-size: 18px;
+}
+.sub-price-text {
+  font-size: 15px;
+  color: #3f3838;
+}
+.sub-second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+  margin-top: 10px;
+}
+.second-item {
+  display: flex;
+  align-items: center;
+}
+.sub-icon {
+  width: 17px;
+  margin-right: 4px;
+}
+.second-item-text {
+  font-size: 13px;
+}
