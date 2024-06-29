@@ -458,3 +458,12 @@ body {
 .second-item-text {
   font-size: 13px;
 }
+@media (max-width: 768px) {
+  .middle-header-contain {
+    width: 100%;
+  }
+  .middle-header {
+    font-size: clamp(0.5rem, 2rem, 6rem);
+    text-align: left;
+  }
+}
