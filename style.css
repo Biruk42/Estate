@@ -532,14 +532,14 @@ body {
   width: 360px;
   margin-top: -10px;
 }
+.help-header {
+  font-size: clamp(1rem, 3.5rem, 5rem);
+}
 .help-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-bottom: 10px;
-}
-.help-header {
-  font-size: clamp(1rem, 3.5rem, 5rem);
 }
 .help-three {
   display: flex;
@@ -549,8 +549,6 @@ body {
 }
 .help-three-items {
   display: flex;
-  align-items: start;
-  justify-content: start;
   gap: 30px;
   padding-bottom: 20px;
 }
@@ -610,11 +608,45 @@ body {
 .help-btn:hover {
   cursor: pointer;
   background-color: #141414;
-  border: none;
+  border: 1px solid transparent;
 }
 .help-btn:hover .help-line {
   border: 1px solid white;
 }
 .help-btn:hover .help-right {
   fill: white;
+}
+@media (max-width: 768px) {
+  .help-first {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+  .help-header {
+    font-size: clamp(0.5rem, 2rem, 6rem);
+    text-align: center;
+  }
+  .help-items {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .help-desc {
+    flex-direction: column;
+  }
+  .help-btn {
+    text-align: center;
+  }
+  .help-three-items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .help-item-s,
+  .help-sub,
+  .help-desc-text {
+    width: 100%;
+    text-align: center;
+  }
+  .help-btn {
+    margin-top: 15px;
+  }
 }
