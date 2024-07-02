@@ -738,13 +738,13 @@ body {
   flex-wrap: wrap;
   gap: 40px;
   border-top: 1px solid #e0dcdc;
+  border-bottom: 1px solid #e0dcdc;
   margin: 0 90px;
-  padding-top: 20px;
 }
 .numb-data-item {
   display: flex;
   flex-direction: column;
-  /* gap: px; */
+  margin: 20px 0;
 }
 .num-text {
   font-size: 19px;
@@ -756,4 +756,49 @@ body {
 }
 .num-gray {
   color: #c0baba;
+}
+@media (max-width: 768px) {
+  .num-data-container {
+    margin: 50px 20px;
+    gap: 15px;
+    padding-top: 20px;
+  }
+  .numb-data-item {
+    margin: 0;
+  }
+}
+/* Loan Section */
+.loan-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 70px 0;
+  gap: 80px;
+}
+.loan-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.loan-item {
+  width: 330px;
+}
+.loan-sub {
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.loan-sub span {
+  display: block;
+}
+.loan-header {
+  font-size: clamp(1rem, 3rem, 5rem);
+  line-height: 50px;
+}
+.loan-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
 }
