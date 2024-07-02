@@ -729,3 +729,31 @@ body {
     bottom: 5px;
   }
 }
+
+/* Num-Data Section */
+.num-data-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-top: 1px solid #e0dcdc;
+  margin: 0 90px;
+  padding-top: 20px;
+}
+.numb-data-item {
+  display: flex;
+  flex-direction: column;
+  /* gap: px; */
+}
+.num-text {
+  font-size: 19px;
+  color: #3f3e3e;
+}
+.num-num {
+  font-size: clamp(1rem, 3rem, 5rem);
+  font-weight: bold;
+}
+.num-gray {
+  color: #c0baba;
+}
