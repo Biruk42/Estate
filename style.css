@@ -800,6 +800,16 @@ body {
   border-color: #1da1f2;
   transform: scale(1.1);
 }
+.insta:active,
+.insta:active .insta,
+.facebook:active,
+.facebook:active .facebook,
+.telegram:active,
+.telegram:active .telegram,
+.twitter:active,
+.twitter:active .twitter {
+  transform: scale(0.9);
+}
 .foot-contain {
   display: flex;
   flex-direction: column;
